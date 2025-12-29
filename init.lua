@@ -1018,3 +1018,4 @@ require('lazy').setup({
 ------------------------------- My Customization
 vim.keymap.set('i', 'jj', '<ESC>', { silent = true })
 
+vim.o.colorcolumn = '80'
