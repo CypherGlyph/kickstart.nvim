@@ -984,7 +984,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
@@ -1019,3 +1019,8 @@ require('lazy').setup({
 vim.keymap.set('i', 'jj', '<ESC>', { silent = true })
 
 vim.o.colorcolumn = '80'
+
+vim.o.expandtab = true -- Use spaces instead of tabs
+vim.o.tabstop = 4 -- A <Tab> character looks like 4 spaces
+vim.o.shiftwidth = 4 -- Indent by 4 spaces (>> , <<, etc.)
+vim.o.softtabstop = 4 -- Make <Tab> and <BS> feel like a 4-space tab
