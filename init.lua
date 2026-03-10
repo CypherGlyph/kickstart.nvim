@@ -1024,3 +1024,7 @@ vim.o.expandtab = true -- Use spaces instead of tabs
 vim.o.tabstop = 4 -- A <Tab> character looks like 4 spaces
 vim.o.shiftwidth = 4 -- Indent by 4 spaces (>> , <<, etc.)
 vim.o.softtabstop = 4 -- Make <Tab> and <BS> feel like a 4-space tab
+
+vim.keymap.set('i', '<F2>', "strftime('%Y-%m-%d %H:%M:%S %a %Z')", { noremap = true, expr = true })
+vim.keymap.set('i', '<F3>', "strftime('| %Y-%m-%d %a |')", { noremap = true, expr = true })
+vim.keymap.set('i', '<F4>', "strftime('| %Y-%m-%d %a %H:%M |')", { noremap = true, expr = true })
